@@ -1,7 +1,13 @@
 # sqlite-ner
 
-Create a new table with entities extracted from source columns using [spacy](https://spacy.io) NER features.
+Create a new table with entities extracted from source columns using [spaCy](https://spacy.io) NER features.
 
+## Install
+```bash
+pip install sqlite-ner
+```
+
+## Usage
 ```bash
 usage: sqlite-ner [-h] [--model MODEL]
                   db_path table_name source_columns [source_columns ...]
