@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "sqlite-ner"
+version = "0.1.0"
+description = "Create a new table with entities extracted from source columns"
+authors = ["redraw <redraw@sdf.org>"]
+readme = "README.md"
+packages = [{include = "sqlite_ner"}]
+
+[tool.poetry.scripts]
+sqlite-ner = "sqlite_ner.ner:cli"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+spacy = "^3.5.4"
+sqlite-utils = "^3.33"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
